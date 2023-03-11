@@ -18,6 +18,6 @@ def classify(contents):
     
 
 
-app = gr.Interface(fn=classify, inputs="text", outputs="text")
+app = gr.Interface(fn=classify, inputs=gr.Textbox(placeholder="Enter you message/mail here ..."), outputs="text", title="Text Classification", description="This project showcases the ability to classify and group different texts (e.g. spams and non-spams) using machine learning")
 
 app.launch()
